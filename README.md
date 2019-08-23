@@ -1,5 +1,5 @@
 # xsscan
-A simple script to detect unescaped characters in a web application for e.g. Cross Site Scripting (XSS)
+A simple script to detect unescaped characters in a web application for e.g. Cross Site Scripting (XSS) attacks.
 
 Only GET requests are supported at the moment.
 
