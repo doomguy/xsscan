@@ -19,6 +19,7 @@ with open(file, 'r') as f:
     char = f.readline().strip()
 
 # start scanning
+summary = [] 
 with open(file,'r') as f:
   for x in f:
     #print ('=== '+url+'XSS'+x.rstrip()+'XSS')
@@ -29,5 +30,10 @@ with open(file,'r') as f:
     for line in r.text.splitlines():
       line = line.rstrip()
       if re.search('XSS'+re.escape(char)+'XSS', line, re.IGNORECASE) :
-        print ('=== '+url+'XSS'+x.rstrip()+'XSS')
-        print (line)
+        summary.append(char+"|"+x.rstrip())
+        #print ('=== '+url+'XSS'+x.rstrip()+'XSS')
+        #print (line)
+
+# print summary
+for x in range(len(summary)): 
+    print(summary[x])
