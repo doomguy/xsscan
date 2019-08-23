@@ -1,5 +1,5 @@
 # xsscan
-A simple Python3 script to detect unescaped characters for Cross Site Scripting (XSS).
+A simple script to detect unescaped characters in a web application for e.g. Cross Site Scripting (XSS)
 
 Only GET requests are supported at the moment.
 
