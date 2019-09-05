@@ -7,7 +7,7 @@ Only GET requests are supported at the moment.
 To scan for a single character just use something like this:
 
 ```
-$ ./xsscan.py lib/less_than.lst "http://example.com/page.php?param=" | uniq -c`
+$ ./xsscan.py lib/less_than.lst "http://example.com/page.php?param=" | uniq -c
       2 <|<
       2 <|%3c
       2 <|%3C 
