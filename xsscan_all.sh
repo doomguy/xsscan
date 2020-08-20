@@ -6,6 +6,8 @@ IFS=$'\n\t'
 # Uncomment for Debugging
 #set -x
 
+TARGET="$1"
+
 echo "[*] Scanning: $TARGET"
 
 for f in lib/*.lst; do
