@@ -17,7 +17,7 @@ The format is as follows: number of found insertion points, the searched for cha
 To scan for all special characters use the bash script `xsscan_all.sh`:
 
 ```
-$ TARGET="example.com/search?q=" ./xsscan_all.sh
+$ ./xsscan_all.sh 'example.com/search?q='
 [*] Scanning: example.com/search?q=
       2 &|&
       1 &|%26
